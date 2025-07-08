@@ -1,6 +1,5 @@
-package zed.rainxch.localproverandconnectivitymanager.ui.theme
+package zed.rainxch.localproverandconnectivitymanager.compose_provider_project.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

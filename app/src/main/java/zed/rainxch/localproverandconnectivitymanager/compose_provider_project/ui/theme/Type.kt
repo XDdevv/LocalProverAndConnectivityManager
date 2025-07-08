@@ -1,4 +1,4 @@
-package zed.rainxch.localproverandconnectivitymanager.ui.theme
+package zed.rainxch.localproverandconnectivitymanager.compose_provider_project.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

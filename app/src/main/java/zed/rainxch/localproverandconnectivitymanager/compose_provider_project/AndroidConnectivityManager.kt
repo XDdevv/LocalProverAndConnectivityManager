@@ -1,4 +1,4 @@
-package zed.rainxch.localproverandconnectivitymanager
+package zed.rainxch.localproverandconnectivitymanager.compose_provider_project
 
 import android.content.Context
 import android.net.ConnectivityManager.NetworkCallback
@@ -8,6 +8,7 @@ import androidx.core.content.getSystemService
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
+
 
 class AndroidConnectivityManager(
     private val context: Context,

@@ -12,28 +12,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import zed.rainxch.localproverandconnectivitymanager.compose_providers.LocalConnectionProvider
-import zed.rainxch.localproverandconnectivitymanager.navigation.AppNavigation
+import zed.rainxch.localproverandconnectivitymanager.compose_provider_project.AndroidConnectivityManager
+import zed.rainxch.localproverandconnectivitymanager.compose_provider_project.MainViewModel
+import zed.rainxch.localproverandconnectivitymanager.compose_provider_project.compose_providers.LocalConnectionProvider
+import zed.rainxch.localproverandconnectivitymanager.compose_provider_project.navigation.AppNavigation
+import zed.rainxch.localproverandconnectivitymanager.connectivity_practice.presentation.ConnectivityPractice
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            val context = LocalContext.current
-            val viewModel = viewModel<MainViewModel> {
-                MainViewModel(
-                    AndroidConnectivityManager(context)
-                )
-            }
-            val connected by viewModel.connected.collectAsStateWithLifecycle()
-
-            CompositionLocalProvider(LocalConnectionProvider provides connected) {
-                Box(modifier = Modifier.fillMaxSize()) {
-                    AppNavigation()
-                }
-            }
-
+            ConnectivityPractice()
         }
     }
 }

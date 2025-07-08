@@ -1,4 +1,4 @@
-package zed.rainxch.localproverandconnectivitymanager.navigation
+package zed.rainxch.localproverandconnectivitymanager.compose_provider_project.navigation
 
 import kotlinx.serialization.Serializable
 

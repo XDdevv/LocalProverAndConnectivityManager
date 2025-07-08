@@ -1,4 +1,4 @@
-package zed.rainxch.localproverandconnectivitymanager.compose_providers
+package zed.rainxch.localproverandconnectivitymanager.compose_provider_project.compose_providers
 
 import androidx.compose.runtime.compositionLocalOf
 

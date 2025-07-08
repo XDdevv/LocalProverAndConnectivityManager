@@ -1,4 +1,4 @@
-package zed.rainxch.localproverandconnectivitymanager.details
+package zed.rainxch.localproverandconnectivitymanager.compose_provider_project.details
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
-import zed.rainxch.localproverandconnectivitymanager.compose_providers.LocalConnectionProvider
+import zed.rainxch.localproverandconnectivitymanager.compose_provider_project.compose_providers.LocalConnectionProvider
 
 @Composable
 fun DetailsScreen(
